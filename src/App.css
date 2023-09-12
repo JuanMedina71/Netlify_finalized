@@ -1,56 +1,47 @@
-.container {
-  max-width: 600px;
+.registro-form {
+  max-width: 400px;
   margin: 0 auto;
   padding: 20px;
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
-.form-group {
-  text-align: left;
+.registro-form h1 {
+  font-size: 24px;
   margin-bottom: 20px;
 }
 
-label {
-  font-weight: bold;
-}
-
-input[type="text"],
-select,
-input[type="date"] {
+.registro-form input,
+.registro-form select,
+.registro-form button {
   width: 100%;
   padding: 10px;
-  margin-top: 5px;
   margin-bottom: 10px;
   border: 1px solid #ccc;
-  border-radius: 3px;
+  border-radius: 4px;
   font-size: 16px;
 }
 
-.btn-container {
-  text-align: center;
-  margin-top: 20px;
+.registro-form select {
+  height: 40px; /* Ajusta la altura de los select según tus preferencias */
 }
 
-.btn {
-  padding: 10px 20px;
-  background-color: #007BFF;
-  color: #fff;
-  border: none;
-  border-radius: 3px;
-  font-size: 18px;
+.registro-form button {
+  background-color: #007bff;
+  color: white;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.btn-cancel {
-  background-color: #ccc;
+.registro-form button:hover {
+  background-color: #0056b3;
 }
 
-.error {
-  color: red;
-  font-size: 14px;
-  margin-top: 5px;
-}
+/* Estilos para hacerlo responsivo */
 
+@media (max-width: 768px) {
+  .registro-form {
+    max-width: 100%;
+  }
+}
